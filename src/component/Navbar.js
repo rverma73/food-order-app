@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <Link className="navbar-brand" to="/">
             Home
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -21,16 +22,16 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <a
+              <Link
                 className="nav-link active"
                 aria-current="page"
-                href="/current-orders"
+                to="/current-orders"
               >
                 Current-Orders
-              </a>
-              <a className="nav-link active" href="/histroy">
+              </Link>
+              <Link className="nav-link active" to="/histroy">
                 Histroy
-              </a>
+              </Link>
             </div>
           </div>
         </div>
