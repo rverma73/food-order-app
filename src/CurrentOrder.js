@@ -5,7 +5,7 @@ const CurrentOrder = () => {
     useContext(OrderContext);
   return (
     <>
-      <h1>Current-Order</h1>
+      <h1 className="heading">Current-Order</h1>
       {currentOrder.map((foodItem, idx) => {
         return (
           <span key={foodItem.id}>

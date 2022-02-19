@@ -4,7 +4,7 @@ const History = () => {
   const { pastOrders, setPastOrders } = useContext(OrderContext);
   return (
     <>
-      <h1>History</h1>
+      <h1 className="heading">History</h1>
       {pastOrders.map((foodOrder, idx) => {
         return (
           <div key={idx}>

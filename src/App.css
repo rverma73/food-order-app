@@ -8,6 +8,9 @@
   width: 100%;
   height: auto;
 }
+.heading {
+  margin-left: 12px;
+}
 .card {
   margin: 6%;
   transition: all 0.4s cubic-bezier(0.075, 0.885, 0, 1);

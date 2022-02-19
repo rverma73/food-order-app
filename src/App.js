@@ -16,7 +16,7 @@ const App = () => {
       >
         <Navbar />
 
-        <div>
+        <>
           <Routes>
             <Route exact path="/" element={<Menu />}></Route>
             <Route exact path="/histroy" element={<History />}></Route>
@@ -26,7 +26,7 @@ const App = () => {
               element={<CurrentOrder />}
             ></Route>
           </Routes>
-        </div>
+        </>
       </OrderContext.Provider>
     </>
   );
