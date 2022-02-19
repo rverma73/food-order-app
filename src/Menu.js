@@ -6,7 +6,6 @@ const Menu = (props) => {
       {data.map((item) => {
         return <Card key={item.id} food={item} />;
       })}
-      ;
     </>
   );
 };
