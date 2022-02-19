@@ -6,9 +6,9 @@ const CurrentOrder = () => {
   return (
     <>
       <h1>Current-Order</h1>
-      {currentOrder.map((foodItem) => {
+      {currentOrder.map((foodItem, idx) => {
         return (
-          <span>
+          <span key={foodItem.id}>
             <h2>{foodItem.title}</h2>
             <h3>{foodItem.price}</h3>
           </span>
